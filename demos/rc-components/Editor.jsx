@@ -1,5 +1,6 @@
 import React from 'react';
 import G6Editor from '../../build/g6Editor';
+import 'antd/dist/antd.css';
 
 class Editor extends React.Component {
   constructor(props) {

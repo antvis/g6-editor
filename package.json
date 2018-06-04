@@ -1,6 +1,6 @@
 {
   "name": "@antv/g6-editor",
-  "version": "1.0.0-beta.80",
+  "version": "1.0.0-beta.81",
   "description": "graph editor",
   "main": "./build/index.js",
   "homepage": "https://github.com/antvis/g6-editor",
