@@ -1,6 +1,6 @@
 {
   "name": "@antv/g6-editor",
-  "version": "1.0.0-beta.75",
+  "version": "1.0.0-beta.777",
   "description": "graph editor",
   "main": "./build/index.js",
   "homepage": "https://github.com/antvis/g6-editor",
@@ -41,7 +41,7 @@
     "get-port": "~3.2.0",
     "home": "~1.0.1",
     "html2canvas": "*",
-    "jquery": "~2.1.4",
+    "jquery": "^3.3.1",
     "jszip": "~3.1.5",
     "mini-css-extract-plugin": "^0.4.0",
     "nightmare": "~2.10.0",
