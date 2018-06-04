@@ -25,7 +25,7 @@ class Editor extends React.Component {
   }
   updateGraph(key, value) {
     const editor = this.editor;
-    editor.excuteCommand(() => {
+    editor.executeCommand(() => {
       const page = this.page;
       const selectedItems = page.getSelected();
       selectedItems.forEach(item => {
