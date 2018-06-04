@@ -1,0 +1,78 @@
+#itempannel{
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  background: #F7F9FB;
+  width: 200px;
+  padding-top: 8px;
+  border-right: 1px solid #E6E9ED;
+}
+#itempannel img{
+  width: 92px;
+  height: 96px;
+  padding: 4px;
+  margin-left: 4px;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0);
+}
+#itempannel img:hover{
+  cursor: move;
+  border: 1px solid #ccc;
+}
+#detailpannel{
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  background: #F7F9FB;
+  width: 200px;
+  border-left: 1px solid #E6E9ED;
+}
+#detailpannel .pannel{
+  display: none
+}
+#detailpannel .block-containe{
+  padding-top: 20px;
+}
+#detailpannel .input{
+  margin-left: 16px;
+}
+#detailpannel .name-input{
+  width: 120px;
+}
+#detailpannel .width-input{
+  width: 52px;
+}
+#detailpannel .height-input{
+  width: 52px;
+}
+#detailpannel .block-container{
+  padding: 16px 8px;
+}
+.bottom-container{
+  position: relative;
+}
+.pannel-title{
+  height: 32px;
+  border-top: 1px solid #DCE3E8;
+  border-bottom: 1px solid #DCE3E8;
+  background: #EBEEF2;
+  color: #000;
+  line-height: 28px;
+  padding-left: 12px;
+}
+.zoom-dropdown-btn {
+  color: rgba(0,0,0,0.45);
+  margin-left: 4px;
+  line-height: 24px;
+  font-weight: 100;
+  text-decoration : none;
+}
+.color-picker{
+  vertical-align: middle;
+  margin-left: 16px;
+}
+.p{
+  margin-bottom: 12px;
+}

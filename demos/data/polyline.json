@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "label": "分支节点",
+      "shape": "model-1",
+      "x": 188.83974305147368,
+      "y": 224,
+      "id": "9b3d008f"
+    },
+    {
+      "label": "模型节点",
+      "shape": "model-2",
+      "x": 189.30867411201612,
+      "y": 139,
+      "id": "c3c9eb13"
+    }
+  ],
+  "edges": [
+    {
+      "source": "c3c9eb13",
+      "sourceAnchor": 4,
+      "target": "9b3d008f",
+      "targetAnchor": 0,
+      "id": "c61b8f54",
+      "shape": "flow-polyline",
+      "label": "文本标签"
+    }
+  ]
+}

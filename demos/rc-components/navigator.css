@@ -1,0 +1,24 @@
+#navigator{
+  width: 200px;
+  height: 176px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 3;
+}
+#navigator .slider{
+  margin: 7px 10px 10px;
+  float: left;
+  width: 120px;
+}
+#navigator #minimap{
+  width: 200px;
+  height: 120px;
+}
+.zoom-dropdown-btn {
+  color: rgba(0,0,0,0.45);
+  margin-left: 4px;
+  line-height: 24px;
+  font-weight: 100;
+  text-decoration : none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>脑图（编辑模式）</title>
+  <link rel="stylesheet" href="/build/mind.css" />
+  <style>
+    #contextmenu .disable {
+      color: #999;
+    }
+
+    #toolbar .disable {
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    API 功能：
+    <button id="read_data">导入数据</button>
+    <button id="save_data">保存数据</button>
+    <button id="save_image">保存图片</button>
+    <button id="save_expand_image">全展开图片</button>
+    <button id="get_command">获取命令</button>
+  </div>
+  <div id="mountNode" style="border: 1px #333 solid">
+    <div id="toolbar">
+      <button data-command="undo" class="command" title="⌘Z">撤销</button>
+      <button data-command="redo" class="command" title="⌘Z">重做</button>
+      <button data-command="collapse" class="command" title="⌘/">折叠</button>
+      <button data-command="expand" class="command" title="⌘/">展开</button>
+      <button data-command="append" class="command" title="Enter">添加相邻节点</button>
+      <button data-command="appendChild" class="command" title="Tab">添加子节点</button>
+      <button data-command="delete" class="command" title="delete">删除</button>
+      <button data-command="autoZoom" class="command">适应视口</button>
+      <button data-command="resetZoom" class="command">实际尺寸</button>
+      <button data-command="zoomTo" data-zoom="0.2" class="command">缩放20%</button>
+      <button data-command="zoomTo" data-zoom="1.5" class="command">缩放150%</button>
+    </div>
+    <div id="graph"></div>
+    <div id="contextmenu">
+      <div data-status="node-selected" class="menu">
+        <button data-command="delete" class="command">删除</button>
+        <button data-command="collapse" class="command" title="⌘/">折叠</button>
+        <button data-command="expand" class="command" title="⌘/">展开</button>
+        <button data-command="append" class="command">添加相邻节点</button>
+        <button data-command="appendChild" class="command">添加子节点</button>
+      </div>
+      <div data-status="canvas-selected" class="menu">
+        <button data-command="undo" class="command">撤销</button>
+        <button data-command="redo" class="command">重做</button>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    快捷键参考:
+    <a href="https://lark.alipay.com/antv/rslism/lgoahb#gx1xtn">链接</a>; Bug 反馈地址：
+    <a href="https://lark.alipay.com/antv/rslism/gadnah">链接</a>
+  </p>
+
+  <p>性能优化点：1. 图过大时，视口变化卡顿</p>
+
+  <script src="/build/mind.js"></script>
+</body>
+
+</html>

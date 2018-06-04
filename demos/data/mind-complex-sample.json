@@ -1,0 +1,575 @@
+{
+  "roots": [
+    {
+      "label": "思维导图",
+      "children": [
+        {
+          "label": "数字迷",
+          "side": "right",
+          "id": "18bcb5ce",
+          "children": [
+            {
+              "id": "51ba0449",
+              "label": "二种模式",
+              "children": [
+                {
+                  "id": "06f84e7f",
+                  "label": "横式",
+                  "side": "right",
+                  "children": [
+                    {
+                      "id": "fdf74e02",
+                      "label": "新建节点",
+                      "children": [
+                        {
+                          "id": "e43fc2ba",
+                          "label": "新建节点",
+                          "children": [
+                            {
+                              "id": "2c2a449a",
+                              "label": "新建节点",
+                              "side": "right"
+                            },
+                            {
+                              "id": "112b1016",
+                              "label": "新建节点",
+                              "side": "right"
+                            }
+                          ],
+                          "side": "right"
+                        }
+                      ],
+                      "side": "right"
+                    }
+                  ]
+                },
+                {
+                  "id": "66e64eff",
+                  "label": "竖式",
+                  "side": "right"
+                }
+              ],
+              "side": "right"
+            },
+            {
+              "id": "dcaf53dc",
+              "label": "三位分析",
+              "children": [
+                {
+                  "id": "5fa15f50",
+                  "label": "个位数字分析法",
+                  "side": "right"
+                },
+                {
+                  "id": "5e95ea9d",
+                  "label": "高位数字分析法",
+                  "side": "right"
+                },
+                {
+                  "id": "5de885a5",
+                  "label": "进位错位分析法",
+                  "side": "right"
+                }
+              ],
+              "side": "right"
+            },
+            {
+              "id": "7af4a453",
+              "label": "三大技巧",
+              "children": [
+                {
+                  "id": "5a6d3e51",
+                  "label": "数据估算分析法（结合数位）",
+                  "side": "right"
+                },
+                {
+                  "id": "736d040c",
+                  "label": "分解质因数分析法",
+                  "side": "right"
+                },
+                {
+                  "id": "a67d4b7d",
+                  "label": "奇偶性分析法",
+                  "side": "right"
+                }
+              ],
+              "side": "right"
+            }
+          ]
+        },
+        {
+          "label": "数阵图",
+          "side": "right",
+          "id": "ae8e30ce",
+          "children": [
+            {
+              "id": "ef9406a2",
+              "label": "四大类型",
+              "side": "right"
+            },
+            {
+              "id": "e6da34a7",
+              "label": "五步法",
+              "children": [
+                {
+                  "id": "d32913d2",
+                  "label": "整体考虑",
+                  "side": "right"
+                },
+                {
+                  "id": "c4f50e08",
+                  "label": "个体考虑",
+                  "side": "right"
+                },
+                {
+                  "id": "8835e9b8",
+                  "label": "列出等式",
+                  "side": "right"
+                },
+                {
+                  "id": "0ae12167",
+                  "label": "确定特殊位置数",
+                  "side": "right",
+                  "children": [
+                    {
+                      "id": "b2ce7dc0",
+                      "label": "新建节点",
+                      "children": [
+                        {
+                          "id": "33ad10fb",
+                          "label": "",
+                          "children": [
+                            {
+                              "id": "7bd3373d",
+                              "label": "新建节点",
+                              "side": "right"
+                            }
+                          ],
+                          "side": "right",
+                          "collapsed": true
+                        }
+                      ],
+                      "side": "right"
+                    }
+                  ]
+                },
+                {
+                  "id": "b082a996",
+                  "label": "分组与尝试",
+                  "side": "right"
+                }
+              ],
+              "side": "right"
+            }
+          ]
+        },
+        {
+          "label": "幻方",
+          "children": [
+            {
+              "label": "二级",
+              "children": [
+                {
+                  "label": "三阶幻方",
+                  "side": "right",
+                  "id": "2359fba3"
+                },
+                {
+                  "id": "0c686625",
+                  "side": "right",
+                  "label": "四阶幻方"
+                },
+                {
+                  "id": "c937cb3b",
+                  "side": "right",
+                  "label": "五阶幻方"
+                }
+              ],
+              "side": "right",
+              "id": "df1ca437"
+            },
+            {
+              "id": "76276154",
+              "side": "right",
+              "label": "结论",
+              "children": [
+                {
+                  "id": "1fdb9203",
+                  "label": "首尾对应数字和那么晚了等于中间数的两倍",
+                  "side": "right"
+                },
+                {
+                  "id": "572ce04b",
+                  "label": "幻方中心为数列中间数",
+                  "side": "right"
+                },
+                {
+                  "id": "c78d33c9",
+                  "label": "新建节点",
+                  "side": "right"
+                },
+                {
+                  "id": "7347df80",
+                  "side": "right",
+                  "label": "最大数与最小数只能放在中间位置，次大数和次小数只能放在四角小数只能放在四角小数只能放在四角小数只能放在四角小数只能放在四角"
+                },
+                {
+                  "id": "3fa2134b",
+                  "side": "right",
+                  "label": "四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数",
+                  "children": [
+                    {
+                      "id": "5f8ed63e",
+                      "label": "新建节点",
+                      "children": [
+                        {
+                          "id": "dbd81602",
+                          "label": "新建节点",
+                          "children": [
+                            {
+                              "id": "ac3cefb1",
+                              "label": "新建节点",
+                              "side": "right"
+                            }
+                          ],
+                          "side": "right"
+                        }
+                      ],
+                      "side": "right"
+                    }
+                  ]
+                },
+                {
+                  "id": "6bb3749c",
+                  "side": "right",
+                  "label": "新建节点"
+                },
+                {
+                  "id": "2fafbbf5",
+                  "side": "right",
+                  "label": "新建节点"
+                }
+              ]
+            }
+          ],
+          "side": "right",
+          "id": "c9c1a348"
+        },
+        {
+          "id": "7d34393d",
+          "side": "right",
+          "label": "统筹",
+          "children": [
+            {
+              "id": "a96280d5",
+              "label": "合理安排时间",
+              "side": "right"
+            },
+            {
+              "id": "9f8e32a2",
+              "label": "f阿斯顿发",
+              "side": "right"
+            },
+            {
+              "id": "54abfd07",
+              "label": "货物调运问题",
+              "side": "right"
+            }
+          ]
+        },
+        {
+          "id": "d6986e10",
+          "side": "right",
+          "label": "新建节点",
+          "children": [
+            {
+              "id": "5dd5fccb",
+              "label": "新建节点",
+              "children": [
+                {
+                  "id": "baf843b4",
+                  "label": "新建节点",
+                  "side": "right"
+                }
+              ],
+              "side": "right"
+            }
+          ]
+        },
+        {
+          "id": "d107c146",
+          "side": "right",
+          "label": "新建节点",
+          "children": [
+            {
+              "id": "4d817475",
+              "label": "",
+              "children": [
+                {
+                  "id": "ade6b7e1",
+                  "label": "",
+                  "side": "right"
+                }
+              ],
+              "side": "right"
+            }
+          ]
+        },
+        {
+          "id": "d35bad95",
+          "side": "right",
+          "label": "新建节点",
+          "children": [
+            {
+              "id": "e37cef2e",
+              "label": "新建节点",
+              "children": [
+                {
+                  "id": "c43bc413",
+                  "label": "",
+                  "side": "right"
+                }
+              ],
+              "side": "right"
+            }
+          ]
+        },
+        {
+          "id": "586d9d45",
+          "side": "right",
+          "label": "新建节点",
+          "children": [
+            {
+              "id": "5bcd6549",
+              "label": "",
+              "children": [
+                {
+                  "id": "22515a53",
+                  "label": "新建节点",
+                  "side": "right",
+                  "children": [
+                    {
+                      "id": "e16c3ef8",
+                      "label": "新建节点",
+                      "children": [
+                        {
+                          "id": "9447c310",
+                          "label": "新建节点",
+                          "side": "right"
+                        }
+                      ],
+                      "side": "right"
+                    }
+                  ]
+                }
+              ],
+              "side": "right"
+            }
+          ]
+        },
+        {
+          "id": "4225bd67",
+          "side": "right",
+          "label": "",
+          "children": [
+            {
+              "id": "bf9b1da1",
+              "label": "",
+              "children": [
+                {
+                  "id": "babc3f32",
+                  "label": "",
+                  "side": "right",
+                  "children": [
+                    {
+                      "id": "199fc5b5",
+                      "label": "",
+                      "children": [
+                        {
+                          "id": "1ce4ecfe",
+                          "label": "",
+                          "children": [
+                            {
+                              "id": "16e65e0b",
+                              "label": "",
+                              "side": "right"
+                            }
+                          ],
+                          "side": "right"
+                        }
+                      ],
+                      "side": "right"
+                    }
+                  ]
+                }
+              ],
+              "side": "right"
+            }
+          ]
+        },
+        {
+          "id": "691ee7b4",
+          "side": "left",
+          "label": "四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数四角的数等于不相邻的两个行列中间数的平均数"
+        },
+        {
+          "id": "39c16d66",
+          "label": "推理逻辑",
+          "side": "left",
+          "children": [
+            {
+              "id": "05bf2410",
+              "label": "新建节点",
+              "children": [
+                {
+                  "id": "b4ed7aeb",
+                  "label": "新建节点",
+                  "side": "left"
+                },
+                {
+                  "id": "1140582c",
+                  "side": "left",
+                  "label": "新建节点"
+                }
+              ],
+              "side": "left"
+            },
+            {
+              "id": "8c4f8027",
+              "label": "新建节点",
+              "children": [
+                {
+                  "id": "b1734b75",
+                  "label": "新建节点",
+                  "side": "left"
+                },
+                {
+                  "id": "d05fc071",
+                  "label": "新建节点",
+                  "side": "left"
+                }
+              ],
+              "side": "left"
+            },
+            {
+              "id": "03439f62",
+              "label": "新建节点",
+              "children": [
+                {
+                  "id": "ac85821a",
+                  "label": "新建节点",
+                  "side": "left"
+                },
+                {
+                  "id": "c1275504",
+                  "side": "left",
+                  "label": "新建节点"
+                },
+                {
+                  "id": "e6390e93",
+                  "side": "left",
+                  "label": "新建节点"
+                },
+                {
+                  "id": "b7f5b3db",
+                  "side": "left",
+                  "label": "新建节点"
+                }
+              ],
+              "side": "left"
+            }
+          ]
+        },
+        {
+          "id": "50902792",
+          "side": "left",
+          "label": "策略",
+          "children": [
+            {
+              "id": "acca096e",
+              "label": "方法",
+              "side": "left",
+              "children": [
+                {
+                  "id": "bc4626f4",
+                  "label": "倒推法",
+                  "side": "left"
+                },
+                {
+                  "id": "27186ff9",
+                  "label": "对称发",
+                  "side": "left"
+                }
+              ]
+            },
+            {
+              "id": "b74c3443",
+              "label": "模型",
+              "children": [
+                {
+                  "id": "893754d1",
+                  "label": "新建节点",
+                  "side": "left"
+                }
+              ],
+              "collapsed": false,
+              "side": "left"
+            }
+          ]
+        },
+        {
+          "id": "6a3797cb",
+          "label": "不定方程",
+          "side": "left",
+          "children": [
+            {
+              "id": "c69151c8",
+              "label": "方法",
+              "children": [
+                {
+                  "id": "6e180542",
+                  "label": "倒推法",
+                  "side": "left"
+                },
+                {
+                  "id": "12d50af1",
+                  "label": "对称发",
+                  "side": "left"
+                }
+              ],
+              "side": "left"
+            },
+            {
+              "id": "ab03b0f2",
+              "label": "模型",
+              "children": [
+                {
+                  "id": "c919ca6a",
+                  "label": "新建节点",
+                  "side": "left"
+                },
+                {
+                  "id": "2367fef0",
+                  "label": "新建节点",
+                  "side": "left"
+                },
+                {
+                  "id": "d3b8ce1b",
+                  "label": "新建节点",
+                  "side": "left"
+                },
+                {
+                  "id": "cb41e339",
+                  "label": "新建节点",
+                  "side": "left"
+                }
+              ],
+              "side": "left"
+            }
+          ]
+        }
+      ],
+      "id": "2d962aea"
+    }
+  ]
+}

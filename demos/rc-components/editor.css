@@ -1,0 +1,20 @@
+*{
+  font-size: 12px !important;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+input{
+  font-size: 12px;
+}
+#editor canvas {
+  display: block;
+}
+#editor{
+  position: relative;
+  width: 100%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

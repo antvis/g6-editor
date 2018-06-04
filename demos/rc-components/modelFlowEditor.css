@@ -1,0 +1,129 @@
+#itempannel{
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  background: #F7F9FB;
+  width: 200px;
+  padding-top: 8px;
+  border-right: 1px solid #E6E9ED;
+}
+#itempannel ul{
+  padding: 0px;
+  padding-left: 16px;
+}
+#itempannel li{
+  color: rgba(0,0,0,0.65);
+  border-radius: 4px;
+  width: 160px;
+  height: 28px;
+  line-height: 26px;
+  padding-left: 8px;
+  border: 1px solid rgba(0,0,0,0);
+  list-style-type: none;
+}
+#itempannel .pannel-type-icon{
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  background: url(https://gw.alipayobjects.com/zos/rmsportal/czNEJAmyDpclFaSucYWB.svg)
+}
+#itempannel li:hover{
+  background: white;
+  border: 1px solid #CED4D9;
+  cursor: move;
+}
+#detailpannel{
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  background: #F7F9FB;
+  width: 200px;
+  border-left: 1px solid #E6E9ED;
+}
+#detailpannel .pannel{
+  display: none
+}
+#detailpannel .block-containe{
+  padding-top: 20px;
+}
+#detailpannel .input{
+  margin-left: 16px;
+}
+#detailpannel .name-input{
+  width: 120px;
+}
+#detailpannel .width-input{
+  width: 52px;
+}
+#detailpannel .height-input{
+  width: 52px;
+}
+#detailpannel .block-container{
+  padding: 16px 8px;
+}
+.bottom-container{
+  position: relative;
+}
+.pannel-title{
+  height: 32px;
+  border-top: 1px solid #DCE3E8;
+  border-bottom: 1px solid #DCE3E8;
+  background: #EBEEF2;
+  color: #000;
+  line-height: 28px;
+  padding-left: 12px;
+}
+.color-picker{
+  vertical-align: middle;
+  margin-left: 16px;
+}
+.p{
+  margin-bottom: 12px;
+}
+/* .model-card{
+  padding: 8px 14px;
+  padding-right: 8px;
+  font-size: 12px;
+}
+.left-bar{
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-radius: 4px 0px 0px 4px;
+}
+.type-icon {
+  width: 20px;
+  height: 16px;
+  margin-top: -8px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+}
+.state-icon {
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  margin-left: 4px;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: inline-block;
+}
+.content-list {
+  display: inline-block;
+  min-width: 128px;
+  margin: 0;
+  margin-left: 20px;
+  padding-left: 12px;
+  list-style: none;
+  color: rgba(0,0,0,0.45);
+}
+.model-card .title{
+  color: #000000;
+} */

@@ -1,0 +1,139 @@
+{
+  "roots": [{
+    "label": "数据可视化 御术 ",
+    "children": [
+      {
+        "label": "应用 九色鹿",
+        "shape": "mind-first-sub",
+        "children": [
+          {
+            "label": "产品",
+            "children": [
+              {
+                "label": "初尘 移动／营销",
+                "children": [
+                  {
+                    "label": "沉鱼 网站／性能",
+                    "children": [
+                      {
+                        "label": "亦叶 可视分析",
+                        "children": [
+                          {
+                            "label": "还有 1 个黄金席位"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "工程",
+            "children": [
+              {
+                "label": "祯逸 工程架构",
+                "children": [
+                  {
+                    "label": "陆沉 工程架构",
+                    "children": [
+                      {
+                        "label": "刘灿 工程前端",
+                        "children": [
+                          {
+                            "label": "还有 3 个黄金席位"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "数据",
+            "children": [
+              {
+                "label": "巴思 数据架构",
+                "children": [
+                  {
+                    "label": "轩恒 数据研发",
+                    "children": [
+                      {
+                        "label": "还有 1 个黄金席位"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "基础 AntV",
+        "shape": "mind-first-sub",
+        "children": [
+          {
+            "label": "架构 ／ 智能可视化",
+            "children": [
+              {
+                "label": "萧庆"
+              }
+            ]
+          },
+          {
+            "label": "G2",
+            "children": [
+              {
+                "label": "绝云",
+                "children": [
+                  {
+                    "label": "米法"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "F2",
+            "children": [
+              {
+                "label": "再飞",
+                "children": [
+                  {
+                    "label": "还有 1 个黄金席位"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "G6",
+            "children": [
+              {
+                "label": "有田",
+                "children": [
+                  {
+                    "label": "还有 1 个黄金席位"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "L7",
+            "children": [
+              {
+                "label": "还有 2 个黄金席位"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "shape": "mind-root"
+  }]
+}

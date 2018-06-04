@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "label": "开始节点",
+      "size": [
+        60,
+        60
+      ],
+      "shape": "input",
+      "x": 188.83974305147368,
+      "y": 47,
+      "id": "9cf739d1",
+      "parent": "group1"
+    },
+    {
+      "label": "分支节点",
+      "shape": "model-1",
+      "x": 188.83974305147368,
+      "y": 224,
+      "id": "9b3d008f",
+      "parent": "group2"
+    },
+    {
+      "label": "模型节点",
+      "shape": "model-2",
+      "x": 189.30867411201612,
+      "y": 139,
+      "id": "c3c9eb13",
+      "parent": "group1"
+    },
+    {
+      "label": "模型节点",
+      "shape": "normal",
+      "x": 327.26333025442943,
+      "y": 333.5,
+      "id": "0aebf344",
+      "parent": "group2"
+    },
+    {
+      "label": "结束节点",
+      "size": [
+        60,
+        60
+      ],
+      "shape": "output",
+      "x": 188.83974305147368,
+      "y": 444,
+      "id": "299dbd09"
+    }
+  ],
+  "edges": [
+    {
+      "source": "9cf739d1",
+      "sourceAnchor": 0,
+      "target": "c3c9eb13",
+      "targetAnchor": 0,
+      "id": "9d8ab285",
+      "label": "文本标签"
+    },
+    {
+      "source": "c3c9eb13",
+      "sourceAnchor": 1,
+      "target": "9b3d008f",
+      "targetAnchor": 0,
+      "id": "c61b8f54",
+      "shape": "flow-polyline"
+    },
+    {
+      "source": "9b3d008f",
+      "sourceAnchor": 2,
+      "target": "299dbd09",
+      "targetAnchor": 0,
+      "id": "2d578ec7"
+    },
+    {
+      "source": "9b3d008f",
+      "sourceAnchor": 1,
+      "target": "0aebf344",
+      "targetAnchor": 0,
+      "id": "8e6ddcfe"
+    }
+  ],
+  "groups": [
+    { "id": "group1", "label": "群组 1"},
+    { "id": "group2", "label": "群组 2", "collapsed": true },
+    { "id": "group3", "label": "群组 3", "x": 50, "y": 100 }
+
+  ]
+}
