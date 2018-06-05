@@ -1,9 +1,11 @@
 const data = require('../data/mind-complex-sample.json');
 const Editor = require('../../src/index');
-new Editor.Mind({
+const editor = new Editor();
+const mind = new Editor.Mind({
   defaultData: data,
   graph: {
     container: 'mountNode',
-    height: window.innerHeight - 200
+    height: window.innerHeight - 100
   }
 });
+editor.add(mind);
