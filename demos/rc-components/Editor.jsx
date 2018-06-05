@@ -38,7 +38,7 @@ class Editor extends React.Component {
   }
   componentDidMount() {
     // 生成 G6 Editor 编辑器
-    const height = window.innerHeight - 100;
+    const height = window.innerHeight - 38;
     const editor = new G6Editor();
     const minimap = new G6Editor.Minimap({
       container: 'minimap',

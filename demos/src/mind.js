@@ -5,7 +5,7 @@ const mind = new Editor.Mind({
   defaultData: data,
   graph: {
     container: 'mountNode',
-    height: window.innerHeight - 100
+    height: window.innerHeight - 38
   }
 });
 editor.add(mind);
