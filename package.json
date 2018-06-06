@@ -2,7 +2,9 @@
   "name": "@antv/g6-editor",
   "version": "1.0.1",
   "description": "graph editor",
-  "main": "./build/index.js",
+  "browser": "build/g6Editor.js",
+  "main": "build/g6Editor.js",
+  "module": "build/g6Editor.js",
   "homepage": "https://github.com/antvis/g6-editor",
   "author": "https://github.com/orgs/antvis/people",
   "repository": {
