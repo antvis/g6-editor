@@ -5,7 +5,7 @@
 
 import React from 'react';
 import Editor from './Editor.jsx';
-import G6Editor from '../../build/g6Editor';
+import G6Editor from '../../src/';
 import Navigator from './Navigator.jsx';
 import ToolBar from './Toolbar.jsx';
 import Contextmenu from './Contextmenu.jsx';
