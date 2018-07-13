@@ -36,7 +36,7 @@ class Contextmenu extends React.Component {
       </div>
       <div data-status="canvas-selected" className="menu">
         <div data-command="undo" className="command">
-          <span>插销</span>
+          <span>撤销</span>
           <span>undo</span>
         </div>
         <div data-command="redo" className="command">
