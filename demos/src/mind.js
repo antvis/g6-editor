@@ -8,10 +8,4 @@ const mind = new Editor.Mind({
     height: window.innerHeight - 38
   }
 });
-mind.on('afteritemunselected', ev => {
-  console.log('afteritemunselected', ev);
-});
-mind.on('afteritemselected', ev => {
-  console.log('afteritemselected', ev);
-});
 editor.add(mind);
