@@ -2,7 +2,7 @@ import React from 'react';
 import G6Editor from '../../src/';
 import 'antd/dist/antd.css';
 
-class Editor extends React.Component {
+export default class Editor extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -64,9 +64,9 @@ class Editor extends React.Component {
       },
       align: {
         grid: true
-      },
-      noEndEdge: false,
-      edgeResizeable: false
+      }
+      // noEndEdge: false,
+      // edgeResizeable: false
     });
     page.on('afteritemselected', ev => {
       this.setState({
@@ -88,5 +88,3 @@ class Editor extends React.Component {
     this.editor = editor;
   }
 }
-
-module.exports = Editor;

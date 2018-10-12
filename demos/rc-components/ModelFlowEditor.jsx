@@ -175,7 +175,7 @@ Flow.registerNode('read-data-base', {
   ]
 }, 'model-card');
 
-class ModelFlowEditor extends Editor {
+export default class ModelFlowEditor extends Editor {
   componentDidMount() {
     setTimeout(() => {
       super.componentDidMount();
@@ -280,4 +280,3 @@ class ModelFlowEditor extends Editor {
     </div>;
   }
 }
-module.exports = ModelFlowEditor;

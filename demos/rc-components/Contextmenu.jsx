@@ -1,7 +1,7 @@
 import React from 'react';
 import './contextmenu.css';
 
-class Contextmenu extends React.Component {
+export default class Contextmenu extends React.Component {
   render() {
     return (<div id="contextmenu">
       <div data-status="node-selected" className="menu">
@@ -69,4 +69,3 @@ class Contextmenu extends React.Component {
     </div>);
   }
 }
-module.exports = Contextmenu;

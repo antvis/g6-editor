@@ -2,7 +2,7 @@ import React from 'react';
 import './navigator.css';
 import { Menu, Dropdown, Slider, Icon } from 'antd';
 
-class Navigator extends React.Component {
+export default class Navigator extends React.Component {
   sliderTipFormatter(num) {
     const { minZoom, maxZoom } = this.props;
     const zoom = Math.ceil(num * (maxZoom - minZoom) + minZoom * 100);
@@ -46,4 +46,3 @@ class Navigator extends React.Component {
     </div>);
   }
 }
-module.exports = Navigator;

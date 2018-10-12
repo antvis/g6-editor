@@ -1,7 +1,7 @@
 import React from 'react';
 import './toolbar.css';
 
-class ToolBar extends React.Component {
+export default class ToolBar extends React.Component {
   render() {
     return (<div id="toolbar">
       <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_598462_3xve1872wizzolxr.css" />
@@ -27,4 +27,3 @@ class ToolBar extends React.Component {
     </div>);
   }
 }
-module.exports = ToolBar;

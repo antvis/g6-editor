@@ -15,12 +15,12 @@ import 'rc-color-picker/assets/index.css';
 import './baseFlowEditor.css';
 import './editor.css';
 
-class BaseFlowEditor extends Editor {
+export default class BaseFlowEditor extends Editor {
   componentDidMount() {
     super.componentDidMount();
     const page = this.page;
     page.changeAddEdgeModel({
-      shape: 'flow-polyline',
+      shape: 'flow-polyline'
     });
   }
   render() {
@@ -37,13 +37,13 @@ class BaseFlowEditor extends Editor {
           value = {inputingLabel ? inputingLabel : selectedModel.label}
           onChange = { ev => {
             this.setState({
-              inputingLabel: ev.target.value,
+              inputingLabel: ev.target.value
             });
           }}
           onBlur = { ev => {
             this.updateGraph('label', ev.target.value);
             this.setState({
-              inputingLabel: null,
+              inputingLabel: null
             });
           }}
         />
@@ -86,7 +86,7 @@ class BaseFlowEditor extends Editor {
                     const newSize = value + '*' + height;
                     selectedModel.size = newSize;
                     this.setState({
-                      selectedModel,
+                      selectedModel
                     });
                     this.updateGraph('size', newSize);
                   } }/>
@@ -97,7 +97,7 @@ class BaseFlowEditor extends Editor {
                     const newSize = width + '*' + value;
                     selectedModel.size = newSize;
                     this.setState({
-                      selectedModel,
+                      selectedModel
                     });
                     this.updateGraph('size', newSize);
                   } }/>
@@ -140,4 +140,3 @@ class BaseFlowEditor extends Editor {
     </div>;
   }
 }
-module.exports = BaseFlowEditor;
