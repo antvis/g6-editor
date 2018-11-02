@@ -8,4 +8,10 @@ const mind = new Editor.Mind({
     height: window.innerHeight - 38
   }
 });
+const minimap = new Editor.Minimap({
+  container: 'minimap',
+  height: 120,
+  width: 200
+});
 editor.add(mind);
+editor.add(minimap);
