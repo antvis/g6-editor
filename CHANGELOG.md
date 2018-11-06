@@ -5,10 +5,9 @@
 
 #### v1.1.1
 
-`2018.10.12`
+`2018.11.02`
 
-- feat: update G6 to v2.1.x
-- fix: fix many bug
+- fix: minimap first render
 
 #### v1.1.0
 
