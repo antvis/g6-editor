@@ -1,8 +1,27 @@
 import React from 'react';
-import './navigator.css';
 import { Menu, Dropdown, Slider, Icon } from 'antd';
+import G6Editor from '../../src/';
+import PropTypes from 'prop-types';
+import './navigator.css';
 
-export default class Navigator extends React.Component {
+class Navigator extends React.Component {
+  createMinimap(container) {
+    return new G6Editor.Minimap({
+      container,
+      height: 120,
+      width: 200
+    });
+  }
+  getCreateMinimap() {
+    const { createMinimap } = this.props;
+    return createMinimap ? createMinimap : this.createMinimap;
+  }
+  componentDidMount() {
+    const { editor } = this.props;
+    const createMinimap = this.getCreateMinimap();
+    const minimap = createMinimap(this.minimapContainer);
+    editor.add(minimap);
+  }
   sliderTipFormatter(num) {
     const { minZoom, maxZoom } = this.props;
     const zoom = Math.ceil(num * (maxZoom - minZoom) + minZoom * 100);
@@ -30,7 +49,7 @@ export default class Navigator extends React.Component {
     );
     return (<div id="navigator">
       <div className="pannel-title">导航器</div>
-      <div id="minimap"></div>
+      <div id="minimap" ref={el => { this.minimapContainer = el; }}></div>
       <div id="zoom-slider">
         <Slider value={ (curZoom - minZoom) / (maxZoom - minZoom) * 100 }
           className="slider"
@@ -46,3 +65,12 @@ export default class Navigator extends React.Component {
     </div>);
   }
 }
+Navigator.propTypes = {
+  minZoom: PropTypes.number,
+  maxZoom: PropTypes.number,
+  curZoom: PropTypes.number,
+  changeZoom: PropTypes.function,
+  createMinimap: PropTypes.function,
+  editor: PropTypes.object
+};
+export default Navigator;

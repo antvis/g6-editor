@@ -1,9 +1,25 @@
 import React from 'react';
+import G6Editor from '../../src/';
+import PropTypes from 'prop-types';
 import './toolbar.css';
-
-export default class ToolBar extends React.Component {
+class Toolbar extends React.Component {
+  createToolbar(container) {
+    return new G6Editor.Toolbar({
+      container
+    });
+  }
+  getCreateToolbar() {
+    const { createToolbar } = this.props;
+    return createToolbar ? createToolbar : this.createToolbar;
+  }
+  componentDidMount() {
+    const { editor } = this.props;
+    const createToolbar = this.getCreateToolbar();
+    const toolbar = createToolbar(this.toolbarContainer);
+    editor.add(toolbar);
+  }
   render() {
-    return (<div id="toolbar">
+    return (<div className="toolbar" ref={el => { this.toolbarContainer = el; }}>
       <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_598462_3xve1872wizzolxr.css" />
       <i data-command="undo" className="command iconfont icon-undo" title="撤销"></i>
       <i data-command="redo" className="command iconfont icon-redo" title="重做"></i>
@@ -27,3 +43,8 @@ export default class ToolBar extends React.Component {
     </div>);
   }
 }
+Toolbar.propTypes = {
+  createToolbar: PropTypes.function,
+  editor: PropTypes.object
+};
+export default Toolbar;

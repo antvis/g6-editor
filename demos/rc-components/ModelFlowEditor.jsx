@@ -4,17 +4,19 @@
  */
 
 import React from 'react';
-import Editor from './Editor.jsx';
-import G6Editor from '../../src/';
 import Navigator from './Navigator.jsx';
 import ToolBar from './Toolbar.jsx';
 import Contextmenu from './Contextmenu.jsx';
+import Itempannel from './Itempannel.jsx';
+import Detailpannel from './Detailpannel.jsx';
+import Editor from './Editor.jsx';
 import Page from './Page.jsx';
 import { Checkbox, Input } from 'antd';
-import './editor.css';
+import G6Editor from '../../src/';
 import './modelFlowEditor.css';
 
-const Flow = G6Editor.Flow;
+const { Flow } = G6Editor;
+
 // 注册模型卡片基类
 Flow.registerNode('model-card', {
   draw(item) {
@@ -175,43 +177,41 @@ Flow.registerNode('read-data-base', {
   ]
 }, 'model-card');
 
-export default class ModelFlowEditor extends Editor {
+export default class BaseFlowEditor extends Editor {
   componentDidMount() {
-    setTimeout(() => {
-      super.componentDidMount();
-      const page = this.page;
-
-      // 输入锚点不可以连出边
-      page.on('hoveranchor:beforeaddedge', ev => {
-        if (ev.anchor.type === 'input') {
-          ev.cancel = true;
-        }
-      });
-      page.on('dragedge:beforeshowanchor', ev => {
-        // 只允许目标锚点是输入，源锚点是输出，才能连接
-        if (!(ev.targetAnchor.type === 'input' && ev.sourceAnchor.type === 'output')) {
-          ev.cancel = true;
-        }
-        // 如果拖动的是目标方向，则取消显示目标节点中已被连过的锚点
-        if (ev.dragEndPointType === 'target' && page.anchorHasBeenLinked(ev.target, ev.targetAnchor)) {
-          ev.cancel = true;
-        }
-        // 如果拖动的是源方向，则取消显示源节点中已被连过的锚点
-        if (ev.dragEndPointType === 'source' && page.anchorHasBeenLinked(ev.source, ev.sourceAnchor)) {
-          ev.cancel = true;
-        }
-      });
-    }, 100);
+    super.componentDidMount();
+    const editor = this.editor;
+    const page = editor.getCurrentPage();
+    // 输入锚点不可以连出边
+    page.on('hoveranchor:beforeaddedge', ev => {
+      if (ev.anchor.type === 'input') {
+        ev.cancel = true;
+      }
+    });
+    page.on('dragedge:beforeshowanchor', ev => {
+      // 只允许目标锚点是输入，源锚点是输出，才能连接
+      if (!(ev.targetAnchor.type === 'input' && ev.sourceAnchor.type === 'output')) {
+        ev.cancel = true;
+      }
+      // 如果拖动的是目标方向，则取消显示目标节点中已被连过的锚点
+      if (ev.dragEndPointType === 'target' && page.anchorHasBeenLinked(ev.target, ev.targetAnchor)) {
+        ev.cancel = true;
+      }
+      // 如果拖动的是源方向，则取消显示源节点中已被连过的锚点
+      if (ev.dragEndPointType === 'source' && page.anchorHasBeenLinked(ev.source, ev.sourceAnchor)) {
+        ev.cancel = true;
+      }
+    });
   }
   render() {
-    const { curZoom, minZoom, maxZoom, inputingLabel, selectedModel } = this.state;
+    const { curZoom, minZoom, maxZoom, selectedModel, inputingLabel } = this.state;
     const labelInput = (
       <div className="p">
         名称：
         <Input
           size="small"
           className="input name-input"
-          value = {inputingLabel !== null ? inputingLabel : selectedModel.label}
+          value = {inputingLabel ? inputingLabel : selectedModel.label}
           onChange = { ev => {
             this.setState({
               inputingLabel: ev.target.value
@@ -226,12 +226,12 @@ export default class ModelFlowEditor extends Editor {
         />
       </div>
     );
-    return <div id="editor">
-      <ToolBar />
+    return <div className="editor">
+      <ToolBar editor={this.editor} />
       <div style={{ height: '42px' }}></div>
       <div className="bottom-container">
-        <Contextmenu />
-        <div id="itempannel">
+        <Contextmenu editor={this.editor} />
+        <Itempannel editor={this.editor} content={
           <ul>
             <li className="getItem" data-shape="k-means" data-type="node" data-size="170*34">
               <span className="pannel-type-icon"></span>K 均值聚类
@@ -249,33 +249,36 @@ export default class ModelFlowEditor extends Editor {
               <span className="pannel-type-icon"></span>朴素贝叶斯
             </li>
           </ul>
-        </div>
-        <div id="detailpannel">
-          <div data-status="node-selected" className="pannel" id="node_detailpannel">
-            <div className="pannel-title">模型详情</div>
-            <div className="block-container">
-              {labelInput}
+        }/>
+        <Detailpannel editor={this.editor} content={
+          <div>
+            <div data-status="node-selected" className="pannel" id="node_detailpannel">
+              <div className="pannel-title">模型详情</div>
+              <div className="block-container">
+                {labelInput}
+              </div>
+            </div>
+            <div data-status="group-selected" className="pannel" id="node_detailpannel">
+              <div className="pannel-title">群组详情</div>
+              <div className="block-container">
+                {labelInput}
+              </div>
+            </div>
+            <div data-status="canvas-selected" className="pannel" id="canvas_detailpannel">
+              <div className="pannel-title">画布</div>
+              <div className="block-container">
+                <Checkbox onChange={ this.toggleGrid.bind(this) } >网格对齐</Checkbox>
+              </div>
             </div>
           </div>
-          <div data-status="group-selected" className="pannel" id="node_detailpannel">
-            <div className="pannel-title">群组详情</div>
-            <div className="block-container">
-              {labelInput}
-            </div>
-          </div>
-          <div data-status="canvas-selected" className="pannel" id="canvas_detailpannel">
-            <div className="pannel-title">画布</div>
-            <div className="block-container">
-              <Checkbox onChange={ this.toggleGrid.bind(this) } >网格对齐</Checkbox>
-            </div>
-          </div>
-        </div>
+        }/>
         <Navigator
+          editor={this.editor}
           curZoom = {curZoom}
           minZoom = {minZoom}
           maxZoom = {maxZoom}
           changeZoom = {this.changeZoom.bind(this)} />
-        <Page />
+        <Page editor={this.editor} />
       </div>
     </div>;
   }

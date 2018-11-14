@@ -7,10 +7,10 @@
 input{
   font-size: 12px;
 }
-#editor canvas {
+.editor canvas {
   display: block;
 }
-#editor{
+.editor{
   position: relative;
   width: 100%;
   user-select: none;

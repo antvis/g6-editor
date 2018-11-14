@@ -1,9 +1,26 @@
 import React from 'react';
+import G6Editor from '../../src/';
+import PropTypes from 'prop-types';
 import './contextmenu.css';
 
-export default class Contextmenu extends React.Component {
+class Contextmenu extends React.Component {
+  createContextmenu(container) {
+    return new G6Editor.Contextmenu({
+      container
+    });
+  }
+  getCreateContextmenu() {
+    const { createContextmenu } = this.props;
+    return createContextmenu ? createContextmenu : this.createContextmenu;
+  }
+  componentDidMount() {
+    const { editor } = this.props;
+    const createContextmenu = this.getCreateContextmenu();
+    const contextmenu = createContextmenu(this.contextmenuContainer);
+    editor.add(contextmenu);
+  }
   render() {
-    return (<div id="contextmenu">
+    return (<div className="contextmenu" ref={el => { this.contextmenuContainer = el; }}>
       <div data-status="node-selected" className="menu">
         <div data-command="copy" className="command">
           <span>复制</span>
@@ -69,3 +86,8 @@ export default class Contextmenu extends React.Component {
     </div>);
   }
 }
+Contextmenu.propTypes = {
+  createContextmenu: PropTypes.function,
+  editor: PropTypes.object
+};
+export default Contextmenu;
