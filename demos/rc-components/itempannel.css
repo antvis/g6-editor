@@ -1,0 +1,22 @@
+.itempannel{
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  background: #F7F9FB;
+  width: 200px;
+  padding-top: 8px;
+  border-right: 1px solid #E6E9ED;
+}
+.itempannel img{
+  width: 92px;
+  height: 96px;
+  padding: 4px;
+  margin-left: 4px;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0);
+}
+.itempannel img:hover{
+  cursor: move;
+  border: 1px solid #ccc;
+}
