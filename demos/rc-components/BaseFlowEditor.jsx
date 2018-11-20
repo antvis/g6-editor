@@ -22,7 +22,7 @@ export default class BaseFlowEditor extends Editor {
     const editor = this.editor;
     const page = editor.getCurrentPage();
     page.changeAddEdgeModel({
-      shape: 'flow-base'
+      shape: 'flow-polyline-round'
     });
   }
   render() {

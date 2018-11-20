@@ -1,6 +1,6 @@
 {
   "name": "@antv/g6-editor",
-  "version": "1.2.0-beta.2",
+  "version": "1.2.0",
   "description": "graph editor",
   "browser": "build/g6Editor.js",
   "main": "build/g6Editor.js",
