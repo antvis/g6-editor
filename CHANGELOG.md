@@ -3,6 +3,13 @@
 
 ---
 
+#### v1.3.0
+
+`2018.11.30`
+
+- fix: pan empty canvas error closes github.#41.#28
+- fix: ungroup child item disapear closes github.#7.#31
+
 #### v1.2.0
 
 `2018.11.22`

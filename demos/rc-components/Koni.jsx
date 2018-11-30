@@ -7,8 +7,8 @@ import React from 'react';
 import Navigator from './Navigator.jsx';
 import ToolBar from './Toolbar.jsx';
 import Contextmenu from './Contextmenu.jsx';
-import Itempannel from './Itempannel.jsx';
-import Detailpannel from './Detailpannel.jsx';
+import Itempanel from './Itempanel.jsx';
+import Detailpanel from './Detailpanel.jsx';
 import Editor from './Editor.jsx';
 import Page from './Page.jsx';
 import G6Editor from '../../src/';
@@ -46,10 +46,10 @@ export default class Koni extends Editor {
       <div style={{ height: '42px' }}></div>
       <div className="bottom-container">
         <Contextmenu editor={this.editor} />
-        <Itempannel
+        <Itempanel
           editor={this.editor}
-          createItempannel = {container => {
-            return new G6Editor.Itempannel({
+          createItempanel = {container => {
+            return new G6Editor.Itempanel({
               container,
               getItemModel(target) {
                 return {
@@ -75,24 +75,24 @@ export default class Koni extends Editor {
             </div>
           }
         />
-        <Detailpannel
+        <Detailpanel
           editor={this.editor}
           content={
             <div>
-              <div data-status="node-selected" className="pannel">
-                <div className="pannel-title">节点</div>
+              <div data-status="node-selected" className="panel">
+                <div className="panel-title">节点</div>
               </div>
-              <div data-status="edge-selected" className="pannel">
-                <div className="pannel-title">边</div>
+              <div data-status="edge-selected" className="panel">
+                <div className="panel-title">边</div>
               </div>
-              <div data-status="group-selected" className="pannel">
-                <div className="pannel-title">组</div>
+              <div data-status="group-selected" className="panel">
+                <div className="panel-title">组</div>
               </div>
-              <div data-status="canvas-selected" className="pannel">
-                <div className="pannel-title">画布</div>
+              <div data-status="canvas-selected" className="panel">
+                <div className="panel-title">画布</div>
               </div>
-              <div data-status="multi-selected" className="pannel">
-                <div className="pannel-title">多选</div>
+              <div data-status="multi-selected" className="panel">
+                <div className="panel-title">多选</div>
               </div>
             </div>}
           />

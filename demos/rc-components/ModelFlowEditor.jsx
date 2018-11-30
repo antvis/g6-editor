@@ -7,8 +7,8 @@ import React from 'react';
 import Navigator from './Navigator.jsx';
 import ToolBar from './Toolbar.jsx';
 import Contextmenu from './Contextmenu.jsx';
-import Itempannel from './Itempannel.jsx';
-import Detailpannel from './Detailpannel.jsx';
+import Itempanel from './Itempanel.jsx';
+import Detailpanel from './Detailpanel.jsx';
 import Editor from './Editor.jsx';
 import Page from './Page.jsx';
 import { Checkbox, Input } from 'antd';
@@ -182,6 +182,7 @@ export default class BaseFlowEditor extends Editor {
     super.componentDidMount();
     const editor = this.editor;
     const page = editor.getCurrentPage();
+
     // 输入锚点不可以连出边
     page.on('hoveranchor:beforeaddedge', ev => {
       if (ev.anchor.type === 'input') {
@@ -203,6 +204,7 @@ export default class BaseFlowEditor extends Editor {
       }
     });
   }
+
   render() {
     const { curZoom, minZoom, maxZoom, selectedModel, inputingLabel } = this.state;
     const labelInput = (
@@ -231,41 +233,41 @@ export default class BaseFlowEditor extends Editor {
       <div style={{ height: '42px' }}></div>
       <div className="bottom-container">
         <Contextmenu editor={this.editor} />
-        <Itempannel editor={this.editor} content={
+        <Itempanel editor={this.editor} content={
           <ul>
             <li className="getItem" data-shape="k-means" data-type="node" data-size="170*34">
-              <span className="pannel-type-icon"></span>K 均值聚类
+              <span className="panel-type-icon"></span>K 均值聚类
             </li>
             <li className="getItem" data-shape="random-forest" data-type="node" data-size="170*34">
-              <span className="pannel-type-icon"></span>随机森林
+              <span className="panel-type-icon"></span>随机森林
             </li>
             <li className="getItem" data-shape="PS-SMART" data-type="node" data-size="170*34">
-              <span className="pannel-type-icon"></span>PS-SMART 分类
+              <span className="panel-type-icon"></span>PS-SMART 分类
             </li>
             <li className="getItem" data-shape="read-data-base" data-type="node" data-size="170*34">
-              <span className="pannel-type-icon"></span>读数据表
+              <span className="panel-type-icon"></span>读数据表
             </li>
             <li className="getItem" data-shape="Bayes" data-type="node" data-size="170*34">
-              <span className="pannel-type-icon"></span>朴素贝叶斯
+              <span className="panel-type-icon"></span>朴素贝叶斯
             </li>
           </ul>
         }/>
-        <Detailpannel editor={this.editor} content={
+        <Detailpanel editor={this.editor} content={
           <div>
-            <div data-status="node-selected" className="pannel" id="node_detailpannel">
-              <div className="pannel-title">模型详情</div>
+            <div data-status="node-selected" className="panel" id="node_detailpanel">
+              <div className="panel-title">模型详情</div>
               <div className="block-container">
                 {labelInput}
               </div>
             </div>
-            <div data-status="group-selected" className="pannel" id="node_detailpannel">
-              <div className="pannel-title">群组详情</div>
+            <div data-status="group-selected" className="panel" id="node_detailpanel">
+              <div className="panel-title">群组详情</div>
               <div className="block-container">
                 {labelInput}
               </div>
             </div>
-            <div data-status="canvas-selected" className="pannel" id="canvas_detailpannel">
-              <div className="pannel-title">画布</div>
+            <div data-status="canvas-selected" className="panel" id="canvas_detailpanel">
+              <div className="panel-title">画布</div>
               <div className="block-container">
                 <Checkbox onChange={ this.toggleGrid.bind(this) } >网格对齐</Checkbox>
               </div>

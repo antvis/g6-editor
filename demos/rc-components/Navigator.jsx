@@ -48,7 +48,7 @@ class Navigator extends React.Component {
       </Menu>
     );
     return (<div id="navigator">
-      <div className="pannel-title">导航器</div>
+      <div className="panel-title">导航器</div>
       <div id="minimap" ref={el => { this.minimapContainer = el; }}></div>
       <div id="zoom-slider">
         <Slider value={ (curZoom - minZoom) / (maxZoom - minZoom) * 100 }

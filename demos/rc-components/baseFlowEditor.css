@@ -1,4 +1,4 @@
-.itempannel{
+.itempanel{
   height: 100%;
   position: absolute;
   left: 0px;
@@ -8,7 +8,7 @@
   padding-top: 8px;
   border-right: 1px solid #E6E9ED;
 }
-.detailpannel{
+.detailpanel{
   height: 100%;
   position: absolute;
   right: 0px;
@@ -17,31 +17,31 @@
   width: 200px;
   border-left: 1px solid #E6E9ED;
 }
-.detailpannel .pannel{
+.detailpanel .panel{
   display: none
 }
-.detailpannel .block-containe{
+.detailpanel .block-containe{
   padding-top: 20px;
 }
-.detailpannel .input{
+.detailpanel .input{
   margin-left: 16px;
 }
-.detailpannel .name-input{
+.detailpanel .name-input{
   width: 120px;
 }
-.detailpannel .width-input{
+.detailpanel .width-input{
   width: 52px;
 }
-.detailpannel .height-input{
+.detailpanel .height-input{
   width: 52px;
 }
-.detailpannel .block-container{
+.detailpanel .block-container{
   padding: 16px 8px;
 }
 .bottom-container{
   position: relative;
 }
-.pannel-title{
+.panel-title{
   height: 32px;
   border-top: 1px solid #DCE3E8;
   border-bottom: 1px solid #DCE3E8;

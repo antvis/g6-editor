@@ -7,8 +7,8 @@ import React from 'react';
 import Navigator from './Navigator.jsx';
 import ToolBar from './Toolbar.jsx';
 import Contextmenu from './Contextmenu.jsx';
-import Itempannel from './Itempannel.jsx';
-import Detailpannel from './Detailpannel.jsx';
+import Itempanel from './Itempanel.jsx';
+import Detailpanel from './Detailpanel.jsx';
 import Editor from './Editor.jsx';
 import Page from './Page.jsx';
 import { Checkbox, Input, InputNumber } from 'antd';
@@ -67,7 +67,7 @@ export default class BaseFlowEditor extends Editor {
       <div style={{ height: '42px' }}></div>
       <div className="bottom-container">
         <Contextmenu editor={this.editor} />
-        <Itempannel editor={this.editor} content={
+        <Itempanel editor={this.editor} content={
           <div>
           <img draggable="false" src="https://gw.alipayobjects.com/zos/rmsportal/ZnPxbVjKYADMYxkTQXRi.svg"
             data-type="node" data-shape="flow-circle" data-size="72*72" data-color="#FA8C16" data-label="起止节点" className="getItem" />
@@ -76,10 +76,10 @@ export default class BaseFlowEditor extends Editor {
           <img draggable="false" src="https://gw.alipayobjects.com/zos/rmsportal/rQMUhHHSqwYsPwjXxcfP.svg" data-type="node" data-shape="flow-capsule" data-size="80*48" data-color="#722ED1" data-label="模型节点" className="getItem" />
           </div>
         }/>
-        <Detailpannel editor={this.editor} content={
+        <Detailpanel editor={this.editor} content={
           <div>
-            <div data-status="node-selected" className="pannel">
-              <div className="pannel-title">节点</div>
+            <div data-status="node-selected" className="panel">
+              <div className="panel-title">节点</div>
               <div className="block-container">
                 {labelInput}
                 <div className="p">
@@ -110,26 +110,26 @@ export default class BaseFlowEditor extends Editor {
                 {colorInput}
               </div>
             </div>
-            <div data-status="edge-selected" className="pannel" id="edge_detailpannel">
-              <div className="pannel-title">边</div>
+            <div data-status="edge-selected" className="panel" id="edge_detailpanel">
+              <div className="panel-title">边</div>
               <div className="block-container">
                 {labelInput}
               </div>
             </div>
-            <div data-status="group-selected" className="pannel" id="group_detailpannel">
-              <div className="pannel-title">组</div>
+            <div data-status="group-selected" className="panel" id="group_detailpanel">
+              <div className="panel-title">组</div>
               <div className="block-container">
                 {labelInput}
               </div>
             </div>
-            <div data-status="canvas-selected" className="pannel" id="canvas_detailpannel">
-              <div className="pannel-title">画布</div>
+            <div data-status="canvas-selected" className="panel" id="canvas_detailpanel">
+              <div className="panel-title">画布</div>
               <div className="block-container">
                 <Checkbox onChange={ this.toggleGrid.bind(this) } >网格对齐</Checkbox>
               </div>
             </div>
-            <div data-status="multi-selected" className="pannel" id="multi_detailpannel">
-              <div className="pannel-title">多选</div>
+            <div data-status="multi-selected" className="panel" id="multi_detailpanel">
+              <div className="panel-title">多选</div>
               <div className="block-container">
                 {colorInput}
               </div>

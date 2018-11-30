@@ -70,11 +70,11 @@ export default class Editor extends React.Component {
     // const contextmenu = new G6Editor.Contextmenu({
     //   container: 'contextmenu'
     // });
-    // const itempannel = new G6Editor.Itempannel({
-    //   container: 'itempannel'
+    // const itempanel = new G6Editor.Itempanel({
+    //   container: 'itempanel'
     // });
-    // const detailpannel = new G6Editor.Detailpannel({
-    //   container: 'detailpannel'
+    // const detailpanel = new G6Editor.Detailpanel({
+    //   container: 'detailpanel'
     // });
     // const page = this.createPage();
     // page.on('afteritemselected', ev => {
@@ -90,8 +90,8 @@ export default class Editor extends React.Component {
     // editor.add(minimap);
     // editor.add(toolbar);
     // editor.add(contextmenu);
-    // editor.add(itempannel);
-    // editor.add(detailpannel);
+    // editor.add(itempanel);
+    // editor.add(detailpanel);
     // editor.add(page);
     // this.page = page;
     // this.editor = editor;
