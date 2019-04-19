@@ -1,3 +1,3 @@
 # G6-Editor
 
-Document：https://yuque.com/antv/g6-editor
+不再对外提供支持。
